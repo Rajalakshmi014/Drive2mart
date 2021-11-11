@@ -94,7 +94,7 @@ if (isset($_POST['btnAdd'])) {
     <div class="row">
         <div class="col-md-6">
             <?php if ($permissions['locations']['create'] == 0) { ?>
-                <div class="alert alert-danger">You have no permission to create area</div>
+                <div class="alert alert-danger">You have not permission to create area</div>
             <?php } ?>
             <!-- general form elements -->
             <div class="box box-primary">
