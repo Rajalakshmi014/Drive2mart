@@ -8,7 +8,7 @@ include_once('../api-firebase/send-email.php');
 
 if (isset($_POST['reset_password']) && $_POST['reset_password'] == 1) {
     if (defined('ALLOW_MODIFICATION') && ALLOW_MODIFICATION == 0) {
-        echo '<label class="alert alert-danger">This operation is not allowed in demo panel!.</label>';
+        echo '<label class="alert alert-danger">operation is not allowed in demo panel!.</label>';
         return false;
     }
     $password = $db->escapeString($fun->xss_clean($_POST['password']));
